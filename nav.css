@@ -11,8 +11,10 @@ img {
     grid-gap: 10px;
     overflow: hidden;
     height: 100vh;
+}
 
-    @media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
+    .wrapper {
         grid-template-columns: 1fr 5fr;
         grid-template-rows: auto;
     }
@@ -36,8 +38,10 @@ img {
     overflow-x: hidden;
     display: flex;
     grid-row-start: 2;
+}
 
-    @media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
+    .lil-nav {
         overflow-y: scroll;
         overflow-x: hidden;
         display: block;
