@@ -3,12 +3,19 @@ img {
     max-width: 100%;
 }
 
+/* $large: 1200px; */
+
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 2fr 1fr;
     grid-gap: 10px;
     overflow: hidden;
     height: 100vh;
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: auto;
+    }
 }
 
 .gallery {
@@ -27,6 +34,15 @@ img {
 .lil-nav {
     overflow-y: scroll;
     overflow-x: hidden;
+    display: flex;
+    grid-row-start: 2;
+
+    @media screen and (min-width: 1200px) {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: block;
+        grid-row-start: auto;
+    }
 }
 
 .lil-nav a {
@@ -40,6 +56,7 @@ img {
     filter: saturate(0);
     transition: all 0.3s ease;
 }
+
 .lil-nav__img:hover {
     transform: scale(1.05);
     filter: saturate(1);
