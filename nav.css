@@ -57,11 +57,11 @@ img {
 
 .lil-nav__img {
     object-fit: cover;
-    filter: saturate(0);
+    filter: saturate(0) brightness(70%) opacity(0.7) contrast(200%);
     transition: all 0.3s ease;
 }
 
 .lil-nav__img:hover {
     transform: scale(1.05);
-    filter: saturate(1);
+    filter: saturate(1) brightness(110%) opacity(1) contrast(100%);
 }
