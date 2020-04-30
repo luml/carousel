@@ -3,6 +3,11 @@ img {
     max-width: 100%;
 }
 
+image {
+    display: block;
+    max-width: 100%;
+}
+
 /* $large: 1200px; This is for scss, but complier required */
 
 .wrapper {
@@ -27,8 +32,8 @@ img {
 }
 
 .gallery__img {
+    width: 100%;
     scroll-snap-align: start;
-    margin-bottom: 10px;
     min-height: 100vh;
     object-fit: cover;
 }
@@ -64,4 +69,20 @@ img {
 .lil-nav__img:hover {
     transform: scale(1.05);
     filter: saturate(1) brightness(110%) opacity(1) contrast(100%);
+}
+
+.dusk {
+    margin-top: -3em;
+}
+.sky {
+    margin-top: -2em;
+}
+.lake {
+    margin-top: -4em;
+}
+.cloud {
+    margin-top: -3.5em;
+}
+.mountain {
+    margin-top: -3em;
 }
